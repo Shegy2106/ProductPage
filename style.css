@@ -45,12 +45,12 @@ li {
 
 
 li a:hover:not(.active) {
-  background-color: #969696;
+  background-color: #253D5B;
   color: white;
 }
 
 .active {
-  background-color: #253D5B;
+  background-color: #969696;
   color: white;
 }
 
@@ -101,11 +101,7 @@ pre{
   margin-left: 25%;
 }
 
-input, select, textarea{
-  margin-bottom: 2%;
-  padding: 5px;
-  --float: right;
-}
+
 
 
 #product-content{
@@ -128,21 +124,49 @@ input, select, textarea{
 
 
 .product-div{
-  flex-basis: 300px;
+  flex-basis: 350px;
   text-align: center;
   padding: 20px;
-  margin: 10px;
   box-sizing: border-box;
+  background-color: #FFF;
+  border-radius: 50px;
 }
 
 
-.product-div > h2
+.product-div > img
 {
+  border-radius: 20px;
+}
+
+input, select, textarea{
+  padding: 20px;
+  --float: right;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: white;
+  border: 1px solid silver;
+}
+
+input[type="submit"]:hover{
+  background-color: #E04E13;
+  color: white;
+
 }
 
 @media screen and (max-width:425px) {
   #product-content{
-    --display:block;
+    display:block;
   }
+
+}
+
+@media screen and (max-width:625px) {
+  #product-content{
+    display:block;
+  }
+
+  #header-img {
+    float: left;
+    margin-left: 10vmin;
 
 }
